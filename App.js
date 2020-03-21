@@ -6,6 +6,7 @@ import { Button, TextInput } from 'react-native-paper';
 import Carousel from './src/components/carousel'
 import { TextInputMask} from 'react-native-masked-text'
 import Collapse from './src/components/collapse'
+import Formulario from './src/components/formulario';
 
 const notificacao = [
   {
@@ -33,12 +34,13 @@ const App = () => {
 
   return(
     <View style={styles.container}>
+      <Formulario />
 
       {/* <Carousel / */}
-      <Collapse data={notificacao}/>
+      {/* <Collapse data={notificacao}/>
       <TouchableOpacity style={styles.button} onPress={() => setModal(true)}>
         <Text>Abrir Modal</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
       {/* <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
         Press me
@@ -87,12 +89,12 @@ const App = () => {
       /> */}
  
 
-      <Modal
+      {/* <Modal
         show={modal}
         close={() => setModal(false)}
       >
         <Text>modal..</Text>        
-      </Modal>
+      </Modal> */}
     </View>
   )
 }
